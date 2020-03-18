@@ -5,6 +5,9 @@ const resolver = {
     getBooks: () => books,
     getAuthors: () => [],
   },
+  Mutation: {
+    addBook: (_, { title, author }) => console.log({ a, b }),
+  },
 };
 
 module.exports = resolver;
