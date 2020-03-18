@@ -18,7 +18,7 @@ const typeDefs = gql`
       name: String!
       no: String!
       position: String!
-      teamId: Int!
+      teamId: String!
     ): Player
   }
 
