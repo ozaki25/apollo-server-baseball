@@ -1,12 +1,14 @@
-const books = require('../data/books');
+const teamService = require('./service/TeamService');
+const playerService = require('./service/PlayerService');
 
 const resolver = {
   Query: {
-    getBooks: () => books,
-    getAuthors: () => [],
+    teams: () => teamService.findAll(),
+    players: () => playerService.findAll(),
   },
   Mutation: {
-    addBook: (_, { title, author }) => console.log({ a, b }),
+    addTeam: (_, team) => teamService.addTeam(team),
+    addPlayer: (_, player) => playerService.addPlayer(player),
   },
 };
 

@@ -1,0 +1,148 @@
+const players = [
+  {
+    name: '菅野　智之',
+    no: '18',
+    position: '投手',
+    team: 1,
+  },
+  {
+    name: '坂本　勇人',
+    no: '6',
+    position: '内野手',
+    team: 1,
+  },
+  {
+    name: '今永　昇太',
+    no: '21',
+    position: '投手',
+    team: 2,
+  },
+  {
+    name: '山﨑　康晃',
+    no: '19',
+    position: '投手',
+    team: 2,
+  },
+  {
+    name: '近本　光司',
+    no: '5',
+    position: '外野手',
+    team: 3,
+  },
+  {
+    name: '梅野　隆太郎',
+    no: '44',
+    position: '捕手',
+    team: 3,
+  },
+  {
+    name: '鈴木　誠也',
+    no: '1',
+    position: '外野手',
+    team: 4,
+  },
+  {
+    name: '小園　海斗',
+    no: '51',
+    position: '内野手',
+    team: 4,
+  },
+  {
+    name: '根尾　昂',
+    no: '7',
+    position: '内野手',
+    team: 5,
+  },
+  {
+    name: '平田　良介',
+    no: '6',
+    position: '外野手',
+    team: 5,
+  },
+  {
+    name: '奥川　恭伸',
+    no: '11',
+    position: '投手',
+    team: 6,
+  },
+  {
+    name: '山田　哲人',
+    no: '1',
+    position: '内野手',
+    team: 6,
+  },
+  {
+    name: '森　友哉',
+    no: '10',
+    position: '捕手',
+    team: 7,
+  },
+  {
+    name: '源田　壮亮',
+    no: '6',
+    position: '内野手',
+    team: 7,
+  },
+  {
+    name: '千賀　滉大',
+    no: '41',
+    position: '投手',
+    team: 8,
+  },
+  {
+    name: '柳田　悠岐',
+    no: '9',
+    position: '外野手',
+    team: 8,
+  },
+  {
+    name: '松井　裕樹',
+    no: '1',
+    position: '投手',
+    team: 9,
+  },
+  {
+    name: '則本　昂大',
+    no: '14',
+    position: '投手',
+    team: 9,
+  },
+  {
+    name: '佐々木　朗希',
+    no: '17',
+    position: '投手',
+    team: 10,
+  },
+  {
+    name: '鳥谷　敬',
+    no: '00',
+    position: '内野手',
+    team: 10,
+  },
+  {
+    name: '杉谷　拳士',
+    no: '2',
+    position: '内野手',
+    team: 11,
+  },
+  {
+    name: '中島　卓也',
+    no: '9',
+    position: '内野手',
+    team: 11,
+  },
+  {
+    name: '山本　由伸',
+    no: '18',
+    position: '投手',
+    team: 12,
+  },
+  {
+    name: '山岡　泰輔',
+    no: '19',
+    position: '投手',
+    team: 12,
+  },
+];
+
+module.exports = players;
