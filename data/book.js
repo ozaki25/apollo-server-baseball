@@ -1,4 +1,4 @@
-export const books = [
+const books = [
   {
     title: 'Harry Potter and the Chamber of Secrets',
     author: 'J.K. Rowling',
@@ -8,3 +8,5 @@ export const books = [
     author: 'Michael Crichton',
   },
 ];
+
+module.exports = books;
