@@ -3,12 +3,28 @@ const playerService = require('./service/PlayerService');
 
 const resolver = {
   Query: {
-    teams: () => teamService.findAll(),
-    players: () => playerService.findAll(),
+    teams: () => {
+      const teams = teamService.findAll();
+      return teams.map(team => ({
+        ...team,
+        players: playerService.findByTeamId(team.id),
+      }));
+    },
+    players: () => {
+      const players = playerService.findAll();
+      return players.map(player => ({
+        ...player,
+        team: teamService.findById(player.teamId),
+      }));
+    },
   },
   Mutation: {
-    addTeam: (_, team) => teamService.addTeam(team),
-    addPlayer: (_, player) => playerService.addPlayer(player),
+    addTeam: (_, team) => {
+      return teamService.add(team);
+    },
+    addPlayer: (_, player) => {
+      return playerService.add(player);
+    },
   },
 };
 

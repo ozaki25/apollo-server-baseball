@@ -14,7 +14,7 @@ const teams = [
     homeStadium: '横浜スタジアム',
   },
   {
-    is: 3,
+    id: 3,
     name: '阪神タイガース',
     englishName: 'Hanshin Tigers',
     foundingDate: '1935年12月10日',

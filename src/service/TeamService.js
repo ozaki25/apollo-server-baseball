@@ -1,5 +1,4 @@
 const initTeams = require('../../data/teams');
-const playerService = require('./PlayerService');
 
 class TeamService {
   constructor() {
@@ -7,19 +6,17 @@ class TeamService {
   }
 
   findAll() {
-    return this.teams.map(team => ({
-      ...team,
-      players: playerService.findByTeam(team.id),
-    }));
+    return this.teams;
   }
 
   findById(id) {
-    return this.teams.find(team => team.id) || null;
+    return this.teams.find(team => team.id === id);
   }
 
-  addTeam(team) {
-    this.teams = [...this.teams, team];
-    return team;
+  add(team) {
+    const newTeam = { ...team, id: Date.now() };
+    this.teams = [...this.teams, newTeam];
+    return newTeam;
   }
 }
 

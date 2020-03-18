@@ -7,19 +7,15 @@ class PlayerService {
   }
 
   findAll() {
-    return this.players.map(player => ({
-      ...player,
-      team: teamService.findAll(player.team),
-    }));
+    return this.players;
   }
 
-  findByTeam(teamId) {
-    return this.players.filter(player => player.team === teamId);
+  findByTeamId(teamId) {
+    return this.players.filter(player => player.teamId === teamId);
   }
 
-  addPlayer(player) {
-    const team = teamService.findById(player.id);
-    const newPlayer = { ...player, team };
+  add(player) {
+    const newPlayer = { ...player, id: String(Date.now()) };
     this.players = [...this.players, newPlayer];
     return newPlayer;
   }

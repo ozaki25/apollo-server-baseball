@@ -14,10 +14,16 @@ const typeDefs = gql`
       homeStadium: String
     ): Team
 
-    addPlayer(name: String!, no: String, position: String, teamId: Int): Player
+    addPlayer(
+      name: String!
+      no: String!
+      position: String!
+      teamId: Int!
+    ): Player
   }
 
   type Team {
+    id: ID
     name: String!
     englishName: String
     foundingDate: String
@@ -26,6 +32,7 @@ const typeDefs = gql`
   }
 
   type Player {
+    id: ID
     name: String!
     no: String
     position: String
