@@ -1,11 +1,15 @@
 const books = [
   {
     title: 'Harry Potter and the Chamber of Secrets',
-    author: 'J.K. Rowling',
+    author: {
+      name: 'J.K. Rowling',
+    },
   },
   {
     title: 'Jurassic Park',
-    author: 'Michael Crichton',
+    author: {
+      name: 'Michael Crichton',
+    },
   },
 ];
 

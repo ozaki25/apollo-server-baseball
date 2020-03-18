@@ -2,7 +2,8 @@ const books = require('../data/books');
 
 const resolver = {
   Query: {
-    books: () => books,
+    getBooks: () => books,
+    getAuthors: () => [],
   },
 };
 
