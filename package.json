@@ -5,7 +5,9 @@
   "author": "ozaki25",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "deploy:dev": "now -e NODE_ENV=development",
+    "deploy;prod": "now --prod"
   },
   "dependencies": {
     "apollo-server": "^2.11.0",
