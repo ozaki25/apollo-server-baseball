@@ -1,4 +1,4 @@
-const initPlayers = require('../../data/players');
+const initPlayers = require('../data/players');
 const teamService = require('./TeamService');
 
 class PlayerService {

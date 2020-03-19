@@ -1,4 +1,4 @@
-const initTeams = require('../../data/teams');
+const initTeams = require('../data/teams');
 
 class TeamService {
   constructor() {
